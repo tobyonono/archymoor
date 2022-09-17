@@ -3,7 +3,7 @@ import React, { Component, useState } from 'react';
 import Stories from 'react-insta-stories';
 import Press from './components/GroupedMedia';
 
-const stories = [
+const story = [
     {
         url: 'https://cdn.sanity.io/images/md0qc5tt/production/1252cfbc94caeda432f491cea66d64766d85d442-2500x1875.jpg?w=2000&q=70&fit=clip&auto=format'
     },
