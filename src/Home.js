@@ -1,8 +1,9 @@
 import './App.css';
-import React, { Component, useState } from 'react';
+import React, {useState } from 'react';
 import Stories from 'react-insta-stories';
 import Press from './components/GroupedMedia';
 
+/*
 const story = [
     {
         url: 'https://cdn.sanity.io/images/md0qc5tt/production/1252cfbc94caeda432f491cea66d64766d85d442-2500x1875.jpg?w=2000&q=70&fit=clip&auto=format'
@@ -28,13 +29,14 @@ const story = [
     'https://pbs.twimg.com/media/EpL6oGyXEAAhFl2?format=jpg&name=large'
 ];
 
-
+*/
 
 const Home = () => {
-    const [currentId, setCurrentId] = useState(0);
+    
+    /*const [currentId, setCurrentId] = useState(0);*/
     return (
         <Stories className='bg-black'
-            currentIndex={currentId}
+            /*currentIndex={currentId}*/
             loop
             keyboardNavigation
             defaultInterval={8000}
