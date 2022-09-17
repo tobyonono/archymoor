@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState } from 'react';
+import React from 'react';
 import Stories from 'react-insta-stories';
 import Press from './components/GroupedMedia';
 
