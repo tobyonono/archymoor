@@ -31,16 +31,12 @@ const Press = [
         type: 'video'
       
     },
-    image6
+    image5
   ];
 
   const Archive = [
     {
-      url: image5
-    },
-    {
-      url:
-        image6
+      url: image6
     },
     {
       url:
@@ -48,7 +44,11 @@ const Press = [
     },
     {
       url:
-        image8  
+        image8
+    },
+    {
+      url:
+        image1  
     },
     {
       url:
@@ -56,7 +56,7 @@ const Press = [
         type: 'video'
       
     },
-    image6
+    image2
   ];
 
   export {Press, Archive};

@@ -35,7 +35,7 @@ const Home = ({storyView}) => {
     /*const [currentId, setCurrentId] = useState(0);*/
     return (
         <Stories className='bg-black'
-            /*currentIndex={currentId}*/
+            currentIndex={0}
             loop
             keyboardNavigation
             defaultInterval={8000}
