@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import Stories from 'react-insta-stories';
-import Press from './components/GroupedMedia';
 
 /*
 const story = [
@@ -31,7 +30,7 @@ const story = [
 
 */
 
-const Home = () => {
+const Home = ({storyView}) => {
     
     /*const [currentId, setCurrentId] = useState(0);*/
     return (
@@ -40,7 +39,7 @@ const Home = () => {
             loop
             keyboardNavigation
             defaultInterval={8000}
-            stories={Press}
+            stories={storyView}
 
             width={'100vw'}
             height={'100vh'}
