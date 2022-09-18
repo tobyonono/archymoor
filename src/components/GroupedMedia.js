@@ -48,10 +48,6 @@ const Press = [
     },
     {
       url:
-        image1  
-    },
-    {
-      url:
         video1,
         type: 'video'
       
