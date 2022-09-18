@@ -33,12 +33,13 @@ const story = [
 const Home = ({storyView, currentId}) => {
     
     /*const [currentId, setCurrentId] = useState(0);*/
+    console.log(currentId);
     return (
         <Stories className='bg-black'
             currentIndex={currentId}
             loop
             keyboardNavigation
-            defaultInterval={8000}
+            defaultInterval={4000}
             stories={storyView}
 
             width={'100vw'}
