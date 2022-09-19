@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className='zIndexOverride'>
-        <Home storyView={storyState} currentId={currentId} />
+        <Home storyView={storyState} storyID={currentId} />
       </div>
 
       <nav className="fixed bottom-12 md:bottom-unset md:top-4 md:left0 text-left p-0 md:p-4 z-10 w-full md:w-auto">
