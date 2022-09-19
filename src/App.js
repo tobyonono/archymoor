@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './App.css';
 import Home from './Home';
 import { Press, Archive } from './components/GroupedMedia';
@@ -9,6 +9,9 @@ import { Logo } from './logos/svgs.js';
 function App() {
 
   const [storyState, setStoryState] = useState(Press);
+  useEffect(() => {
+    
+  }, [storyState]);
   const [currentId, setCurrentId] = useState(0);
   return (
     <div className="App">
@@ -23,7 +26,7 @@ function App() {
               onClick={
                 () => {
                   setStoryState(Press);
-                  setCurrentId(0)
+                  setCurrentId(-1)
                 }
               }>
               <span className="w-12">001</span>
@@ -36,7 +39,7 @@ function App() {
             onClick={
                 () => {
                   setStoryState(Archive);
-                  setCurrentId(0)
+                  setCurrentId(-1)
                 }
               }>
               <span className="w-12">002</span>
