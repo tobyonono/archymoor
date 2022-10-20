@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: "Helvetica Neue Medium";
+  src:local("Helvetica Neue Medium"),
+  url("./fonts/Helvetica-Neue-Font/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf")
+}
+
+@font-face{
+  font-family: "Nitti";
+  font-weight:400;
+  src:local("Nitti"),
+  url("./fonts/nitti/Nitti-Normal.woff")
+}
+
+@font-face{
+  font-family: "Nitti";
+  font-weight:700;
+  src:local("Nitti Bold"),
+  url("./fonts/nitti/Nitti-Bold.woff")
+}

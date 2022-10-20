@@ -10,49 +10,54 @@ import image8 from '../images/Press04.png';
 import video1 from '../images/IMG_0538.mp4';
 
 const Press = [
-    {
-      url: image1
-    },
-    {
-      url:
-        image2
-    },
-    {
-      url:
-        image3
-    },
-    {
-      url:
-        image4  
-    },
-    {
-      url:
-        video1,
-        type: 'video'
-      
-    },
-    image5
-  ];
+  {
+    url:
+      image1
+  },
+  {
+    url:
+      image2
+  },
+  {
+    url:
+      image3
+  },
+  {
+    url:
+      image4
+  },
+  {
+    url:
+      video1,
+    type: 'video'
 
-  const Archive = [
-    {
-      url: image6
-    },
-    {
-      url:
-        image7
-    },
-    {
-      url:
-        image8
-    },
-    {
-      url:
-        video1,
-        type: 'video'
-      
-    },
-    image2
-  ];
+  },
+  {
+    url: image5
+  }
 
-  export {Press, Archive};
+];
+
+const Archive = [
+  {
+    url: image6
+  },
+  {
+    url:
+      image7
+  },
+  {
+    url:
+      image8
+  },
+  {
+    url:
+      video1,
+    type: 'video',
+    duration:7
+
+  },
+  image2
+];
+
+export { Press, Archive };
