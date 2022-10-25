@@ -8,8 +8,24 @@ import image5 from '../images/cover.png';
 import image7 from '../images/Press02.jpg';
 import image8 from '../images/Press04.png';
 import video1 from '../images/IMG_0538.mp4';
+import Jollof from '../images/jollof.jpg';
+import Mihalis from '../images/Mihalis.jpg';
+import Toni from '../images/Toni-Morrison-Beloved (1).jpg';
+import Toni2 from '../images/Toni-Morrison-Early-draft-of-Beloved-2-(2).jpg';
+import Sembene from '../images/Sembene.webp';
+import atu from '../videos/atu2.mp4';
+import dancaesar from '../videos/dancaesar.mp4';
+import dance from '../videos/dance.mp4';
+import caine from '../videos/caine.mp4';
+import durimel from '../videos/durimel.mp4';
 
-const Press = [
+
+
+
+
+
+
+const PressImgs = [
   {
     url:
       image1
@@ -38,7 +54,7 @@ const Press = [
 
 ];
 
-const Archive = [
+const ArchiveImgs = [
   {
     url: image6
   },
@@ -60,4 +76,7 @@ const Archive = [
   image2
 ];
 
-export { Press, Archive };
+const Lyrics = [Jollof, Mihalis, Toni, Toni2, Sembene];
+const Videos = [atu, dancaesar,dance, caine, durimel];
+
+export { PressImgs, ArchiveImgs, Lyrics, Videos };
