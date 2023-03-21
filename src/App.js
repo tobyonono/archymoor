@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
         <Route path="/archive" element={<Archive shouldClearTimeout={shouldClearTimeout} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} storyIndex={storyIndex} storyState={storyState} setStoryState={setStoryState} />} />
-        <Route path="/bonniehill" element={<BonnieHill setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
+        <Route path="/bonniehill" element={<BonnieHill storyState={storyState} setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
 
       </Routes>
 

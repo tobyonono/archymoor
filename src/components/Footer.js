@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
-import { Logo, WhatsApp, Twitter, Facebook, Soundcloud } from '../icons/svgs.js';
+import { Logo, Instagram, Twitter, Facebook, Soundcloud, Youtube } from '../icons/svgs.js';
 
 const Footer = () => {
     const [showModal, setShowModal] = useState(false);
@@ -13,8 +13,9 @@ const Footer = () => {
                 <div className='flex fixed bottom-0 p-4 pb-10 right-0'>
                     <Twitter />
                     <Facebook />
-                    <WhatsApp />
+                    <Instagram />
                     <Soundcloud />
+                    <Youtube />
                 </div>
             </div>
             <div className='fixed bottom-0 left-0 right-0'>

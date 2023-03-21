@@ -8,8 +8,8 @@ import { Lyrics } from './GroupedMedia';
 
 const Modal = ({ setShowModal, showModal }) => {
 
-    const [lightboxDisplay, setLightBoxDisplay] = useState(true);
-    const [imageToShow, setImageToShow] = useState(Toni);
+    const [lightboxDisplay, setLightBoxDisplay] = useState(false);
+    const [imageToShow, setImageToShow] = useState('');
 
     const showImage = (image) => {
         //set imageToShow to be the one that's been clicked on    
@@ -22,10 +22,16 @@ const Modal = ({ setShowModal, showModal }) => {
         setLightBoxDisplay(false)
     }
 
+    const imageCards = Lyrics.map((image) => (
+        <img className="image-card" onClick={() => showImage(image)}     src={image} />
+    ));
+
+   
+
     return (
         <article className='fixed inset-0 z-99 transition-transform duration-500'>
             <section className='inset-0 w-full max-w-full mt-14 md:mt-11 px-4 py-12 bg-white fixed overflow-y-auto text-black z-99 select-auto' >
-                <button className='fixed top-12 right-0 m-4' onClick={() => setShowModal(!showModal)}> Close </button>
+                <button className='fixed top-12 right-0 m-6' onClick={() => setShowModal(!showModal)}> Close </button>
                 <button className='fixed top-0 left-0 right-0 h-12'></button>
                 <section className='w-full max-w-screen-sm mx-auto mb-32 p-0 md:p-4'>
                     <h1 className='uppercase mb-6 text-center font-mono'> moormoormoor </h1>
@@ -39,7 +45,7 @@ const Modal = ({ setShowModal, showModal }) => {
                     <h1 className='uppercase mb-6 text-center font-mono'> LYRICS </h1>
                     <section className='grid grid-cols-2 gap-4'>
                         <div className=''>
-                            <div><img src={Lyrics[2]}></img></div>
+                            <div><img src={Lyrics[2]} onClick={() => showImage(Lyrics[2])}></img></div>
                             <div>
                                 <h2 className='font-mono uppercase text-xs'>Beautiful</h2>
                                 <h6 className='font-mono uppercase text-xs'>2022</h6>
@@ -48,7 +54,7 @@ const Modal = ({ setShowModal, showModal }) => {
 
                         </div>
                         <div>
-                            <div><img src={Lyrics[1]}></img></div>
+                            <div><img src={Lyrics[1]} onClick={() => showImage(Lyrics[1])}></img></div>
                             <div>
                                 <h2 className='font-mono uppercase text-xs'>Moonboy</h2>
                                 <h6 className='font-mono uppercase text-xs'>2019</h6>
@@ -57,14 +63,14 @@ const Modal = ({ setShowModal, showModal }) => {
                         </div>
                         <div>
 
-                            <div><img src={Lyrics[3]}></img></div>
+                            <div><img src={Lyrics[3]} onClick={() => showImage(Lyrics[3])}></img></div>
                             <h2 className='font-mono uppercase text-xs'>The Long Road</h2>
                             <h6 className='font-mono uppercase text-xs'>2020</h6>
                             <h6 className='font-mono uppercase text-xs'>ODDS</h6>
                         </div>
                         <div>
 
-                            <div><img src={Lyrics[4]}></img></div>
+                            <div><img src={Lyrics[4]} onClick={() => showImage(Lyrics[4])}></img></div>
                             <h2 className='font-mono uppercase text-xs'>Remember Me</h2>
                             <h6 className='font-mono uppercase text-xs'>2020</h6>
                             <h6 className='font-mono uppercase text-xs'>ODDS</h6>

@@ -8,12 +8,12 @@ import { PressImgs, ArchiveImgs } from '../components/GroupedMedia';
 const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
 
   return (
-    <nav className="fixed bottom-12 md:bottom-unset md:top-4 md:left0 text-left p-0 md:p-4 z-10 w-full md:w-auto">
+    <nav className="fixed  md:bottom-unset md:top-4 md:left0 text-left p-0 md:p-4 z-10 w-full md:w-auto">
       <ul className="hidden md:flex flex-col  text-white font-mono text-sm">
         <li className='active:border-blue-400'>
           <NavLink to='/' className={({ isActive }) =>
-          isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 '
-        } end >
+            isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 '
+          } end >
             <button className="pointer-events-auto hover:opacity-100 "
               onClick={
                 () => {
@@ -31,42 +31,51 @@ const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
         </li>
         <li>
           <NavLink to='/archive' className={({ isActive }) =>
-          isActive ? 'opacity-100 border-b border-dashed' : 'opacity-50 hover:opacity-100 '
-        } >
-              <button className="pointer-events-auto"
-                onClick={
-                  () => {
-                    setStoryState(ArchiveImgs);
-                    setStoryIndex(0);
-                    setClearTimeout(true);
-                  }
-                }>
-                <span className="w-12">002</span>
-                <span className='w-12 ml-1 mr-1'>-</span>
-                <span>ARCHIVE</span>
-              </button>
+            isActive ? 'opacity-100 border-b border-dashed' : 'opacity-50 hover:opacity-100 '
+          } >
+            <button className="pointer-events-auto"
+              onClick={
+                () => {
+                  setStoryState(ArchiveImgs);
+                  setStoryIndex(0);
+                  setClearTimeout(true);
+                }
+              }>
+              <span className="w-12">002</span>
+              <span className='w-12 ml-1 mr-1'>-</span>
+              <span>ARCHIVE</span>
+            </button>
           </NavLink>
-      </li>
-      <li>
-        <NavLink to='/bonniehill' className={({ isActive }) =>
-          isActive ? 'opacity-100' : 'opacity-50 hover:opacity-100 border-dashed'
-        }>
+        </li>
+        <li>
+          <NavLink to='/bonniehill' className={({ isActive }) =>
+            isActive ? 'opacity-100' : 'opacity-50 hover:opacity-100 border-dashed'
+          }>
 
-          <button className="pointer-events-auto ">
-            <span className="w-12">003</span>
+            <button className="pointer-events-auto ">
+              <span className="w-12">003</span>
+              <span className='w-12 ml-1 mr-1'>-</span>
+              <span>BTS</span>
+            </button>
+          </NavLink>
+        </li>
+        <li>
+          <button className="pointer-events-auto opacity-50 hover:opacity-100">
+            <span className="w-12">004</span>
             <span className='w-12 ml-1 mr-1'>-</span>
-            <span>BTS</span>
+            <span>PRESS</span>
           </button>
-        </NavLink>
-      </li>
-      <li>
-        <button className="pointer-events-auto opacity-50 hover:opacity-100">
-          <span className="w-12">004</span>
-          <span className='w-12 ml-1 mr-1'>-</span>
-          <span>PRESS</span>
-        </button>
-      </li>
-    </ul>
+        </li>
+      </ul>
+      <ul className=" fixed md:hidden flex flex-col text-white bottom-unset top-4 left0 text-left p-4 w-auto">
+        <li>
+          <div class="space-y-2">
+            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-8 h-0.5 bg-white"></span>
+            <span class="block w-5 h-0.5 bg-white"></span>
+          </div>
+        </li>
+      </ul>
     </nav >
   )
 }
