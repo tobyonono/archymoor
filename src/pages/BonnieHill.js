@@ -25,7 +25,8 @@ const BonnieHill = ({ storyState, setStoryState, setClearTimeout, setStoryIndex 
                     onStoryEnd={(s, st) => console.log("story ended", s, st)}
                     onAllStoriesEnd={(s, st) => console.log("all stories ended", s, st)}
                     onStoryStart={(s, st) => console.log("story started", s, st)}
-                    storyStyles={{'object-fit': 'contain', width:'', 'height':'50%' }}
+                    storyStyles={{'object-fit': 'contain', width:'50%', 'height':'50%' }}
+                    storyContainerStyles={{background:'black'}}
                     
                 />
             </div>
