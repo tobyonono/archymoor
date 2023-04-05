@@ -12,7 +12,6 @@ const Footer = () => {
             <div>
                 <div className='flex fixed bottom-0 p-4 pb-10 right-0'>
                     <Twitter />
-                    <Facebook />
                     <Instagram />
                     <Soundcloud />
                     <Youtube />

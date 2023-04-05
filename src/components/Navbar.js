@@ -31,7 +31,7 @@ const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
         </li>
         <li>
           <NavLink to='/archive' className={({ isActive }) =>
-            isActive ? 'opacity-100 border-b border-dashed' : 'opacity-50 hover:opacity-100 '
+            isActive ? 'opacity-100 border-b ' : 'opacity-50 hover:opacity-100 '
           } >
             <button className="pointer-events-auto"
               onClick={
@@ -48,8 +48,8 @@ const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/bonniehill' className={({ isActive }) =>
-            isActive ? 'opacity-100' : 'opacity-50 hover:opacity-100 border-dashed'
+          <NavLink to='/bts' className={({ isActive }) =>
+            isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 border-dashed'
           }>
 
             <button className="pointer-events-auto ">
@@ -60,11 +60,24 @@ const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
           </NavLink>
         </li>
         <li>
-          <button className="pointer-events-auto opacity-50 hover:opacity-100">
-            <span className="w-12">004</span>
-            <span className='w-12 ml-1 mr-1'>-</span>
-            <span>PRESS</span>
-          </button>
+          <NavLink to='/press' className={({ isActive }) =>
+            isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 border-dashed'
+          }>
+            <button className="pointer-events-auto opacity-50 hover:opacity-100">
+              <span className="w-12">004</span>
+              <span className='w-12 ml-1 mr-1'>-</span>
+              <span>PRESS</span>
+            </button>
+          </NavLink>
+        </li>
+        <li>
+          
+            <button className="pointer-events-auto opacity-50 hover:opacity-100">
+              <span className="w-12">005</span>
+              <span className='w-12 ml-1 mr-1'>-</span>
+              <span>SHOWS</span>
+            </button>
+          
         </li>
       </ul>
       <ul className=" fixed md:hidden flex flex-col text-white bottom-unset top-4 left0 text-left p-4 w-auto">

@@ -6,6 +6,7 @@ import { PressImgs, ArchiveImgs } from './components/GroupedMedia';
 import Home from './pages/Home';
 import Archive from './pages/Archive';
 import BonnieHill from './pages/BonnieHill';
+import Press from './pages/Press';
 
 
 
@@ -23,7 +24,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
         <Route path="/archive" element={<Archive shouldClearTimeout={shouldClearTimeout} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} storyIndex={storyIndex} storyState={storyState} setStoryState={setStoryState} />} />
-        <Route path="/bonniehill" element={<BonnieHill storyState={storyState} setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
+        <Route path="/bts" element={<BonnieHill storyState={storyState} setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
+        <Route path="/press" element={<Press storyState={storyState} setStoryState={setStoryState} setClearTimeout={setClearTimeout} setStoryIndex={setStoryIndex} />} />
 
       </Routes>
 

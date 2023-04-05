@@ -18,6 +18,9 @@ import dancaesar from '../videos/dancaesar.mp4';
 import dance from '../videos/dance.mp4';
 import caine from '../videos/caine.mp4';
 import durimel from '../videos/durimel.mp4';
+import guap from '../videos/Guap.mp4';
+import notion from '../videos/Notion.mp4';
+import culted from '../videos/Culted.mp4';
 
 
 
@@ -78,5 +81,6 @@ const ArchiveImgs = [
 
 const Lyrics = [Jollof, Mihalis, Toni, Toni2, Sembene];
 const Videos = [atu, dancaesar,dance, caine, durimel];
+const PressVideos= [guap, notion, culted];
 
-export { PressImgs, ArchiveImgs, Lyrics, Videos };
+export { PressImgs, ArchiveImgs, Lyrics, Videos, PressVideos };
