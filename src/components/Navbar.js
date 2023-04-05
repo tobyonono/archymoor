@@ -60,10 +60,11 @@ const Navbar = ({ setStoryState, setStoryIndex, setClearTimeout }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/press' className={({ isActive }) =>
+        <NavLink to='/press' className={({ isActive }) =>
             isActive ? 'opacity-100 border-b' : 'opacity-50 hover:opacity-100 border-dashed'
           }>
-            <button className="pointer-events-auto opacity-50 hover:opacity-100">
+
+            <button className="pointer-events-auto ">
               <span className="w-12">004</span>
               <span className='w-12 ml-1 mr-1'>-</span>
               <span>PRESS</span>
