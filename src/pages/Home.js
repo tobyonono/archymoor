@@ -14,9 +14,9 @@ const Home = ({ setStoryState, setClearTimeout, setStoryIndex }) => {
 
     return (
         <>
-            <div className='z-10 fixed top-0 w-full h-full bg-black p-0 md:p-4 overflow-y-auto'>
+            <div className='z-10  fixed top-0 w-full h-full bg-black p-0 md:p-4 overflow-y-auto'>
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-4 place-items-center h-full'>
-                    <div className='w-full lg:py-6 z-10 '>
+                    <div className='w-full h-full lg:py-6 z-10 '>
                         <div className='w-4/5 flex flex-col  justify-center'>
                         <section className='py-20'>
                                 <div className='aspect-w-16 aspect-h-9'>

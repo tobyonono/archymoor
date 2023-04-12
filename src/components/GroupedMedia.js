@@ -21,6 +21,9 @@ import durimel from '../videos/durimel.mp4';
 import guap from '../videos/Guap.mp4';
 import notion from '../videos/Notion.mp4';
 import culted from '../videos/Culted.mp4';
+import lobf from '../videos/TheLineOfBestFit.mp4';
+import wonderland from '../videos/Wonderland.mp4';
+import newwave from '../videos/NewWave.mp4';
 
 
 
@@ -81,6 +84,6 @@ const ArchiveImgs = [
 
 const Lyrics = [Jollof, Mihalis, Toni, Toni2, Sembene];
 const Videos = [atu, dancaesar,dance, caine, durimel];
-const PressVideos= [guap, notion, culted];
+const PressVideos= [guap, notion, culted, lobf, wonderland, newwave];
 
 export { PressImgs, ArchiveImgs, Lyrics, Videos, PressVideos };
